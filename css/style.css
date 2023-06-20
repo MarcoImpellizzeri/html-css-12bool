@@ -3,3 +3,26 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* per visualizzare le col */ 
+[class*="col-"] {
+    border: 1px solid white;
+    background-color: rgb(15, 160, 218);
+    min-height: 50px;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.col > .row,
+[class*="col-"] > .row {
+    padding: 1rem;
+}
+
+.col > .row > .col,
+[class*="col-"] > .row > [class*="col-"] {
+    background-color: greenyellow;
+}
