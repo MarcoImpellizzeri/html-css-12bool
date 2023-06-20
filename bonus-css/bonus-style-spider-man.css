@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: .8rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* per visualizzare le col */ 
+[class*="col-"] {
+    min-height: 50px;
+    max-width: 50px;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.col > .row,
+[class*="col-"] > .row {
+    padding: 1rem;
+}
+
+.col > .row > .col,
+[class*="col-"] > .row > [class*="col-"] {
+    background-color: greenyellow;
+}
+
+.red {
+    background-color: red;
+}
+
+.black {
+    background-color: black;
+}
+
+.blue {
+    background-color: rgb(0, 153, 255);
+}
+
+.gray {
+    background-color: gray;
+}
+
+.white {
+    background-color: white;
+}
+
+.justify-content {
+    justify-content: center;
+}
